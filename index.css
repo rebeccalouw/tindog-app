@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #E5E5E5;
+}
+
+.app-container {
+    width: 450px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.header-btn{
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    background: none;
+}
+
+.header-btn img {
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.dog-img {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.dog-info {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.dog-info > h4 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.dog-bio {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #B7B7B7;
+    margin: 0;
+}
+
+.card-end-message {
+    margin: 1.5rem;
+    background: linear-gradient(180deg, #FA695A 0%, #F83375 100%);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1em;
+}
+
+.card-end-message > h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3em;
+}
+
+.card-end-message > h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 3em 0;
+}
+
+.card-end-message > button {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    font-size: 1.25rem;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #3D3D3D;
+    margin-bottom: 2em;
+}
+
+.badge {
+    width: 150px;
+    transform: rotate(-35deg);
+    position: absolute;
+    bottom: 450px;
+    left: 10px;
+}
+
+.actions {
+    height: 8.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.actions > button {
+    border: none;
+    background: none;
+    margin: 0.75em;
+    cursor: pointer;
+}
+
+.actions > button > img {
+    padding: 15px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+ .reject-button :hover{
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+ .accept-button :hover, :focus {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
