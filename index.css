@@ -6,11 +6,11 @@ html, body {
 }
 
 .app-container {
-    width: 450px;
-    height: 800px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin: 2rem auto;
     background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
     background-repeat: no-repeat;
 }
@@ -19,8 +19,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    margin-bottom: 1rem;
+    height: 70px;
+    margin-bottom: 0.25rem;
 }
 
 .header-btn{
@@ -105,7 +105,7 @@ html, body {
     width: 150px;
     transform: rotate(-35deg);
     position: absolute;
-    bottom: 450px;
+    bottom: 370px;
     left: 10px;
 }
 
@@ -140,10 +140,16 @@ html, body {
     box-shadow: 0px 10px 20px #CCF1E6;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 450px) {
 
     .app-container {
-        width: 100vw;
-        height: 100vh;
+        width: 450px;
+        height: 800px;
+        margin: 2rem auto;
     }
+
+    .header {
+        margin-bottom: 1rem;
+    }
+
 }
